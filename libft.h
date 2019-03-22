@@ -6,7 +6,7 @@
 /*   By: niboute <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/04 16:18:03 by niboute           #+#    #+#             */
-/*   Updated: 2019/02/01 15:32:17 by niboute          ###   ########.fr       */
+/*   Updated: 2019/03/22 05:42:30 by niboute          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,7 @@ typedef struct		s_line
 
 int					get_next_line(const int fd, char **line);
 
+long				ft_abs(long value);
 int					ft_atoi(const char *src);
 void				ft_bzero(void *s, size_t n);
 double				ft_dmap(double val, double range, double min2, double max2);

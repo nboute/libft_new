@@ -6,14 +6,14 @@
 #    By: niboute <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/09 18:34:41 by niboute           #+#    #+#              #
-#    Updated: 2019/02/01 15:33:14 by niboute          ###   ########.fr        #
+#    Updated: 2019/03/22 05:44:33 by niboute          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME=libft.a
 
-SRCS= ft_atoi.c ft_bzero.c ft_dmap.c ft_isalnum.c ft_isalpha.c ft_isascii.c \
-	 ft_isdigit.c ft_isprint.c ft_itoa.c ft_lstadd.c ft_lstdel.c \
+SRCS= ft_abs.c ft_atoi.c ft_bzero.c ft_dmap.c ft_isalnum.c ft_isalpha.c \
+	 ft_isascii.c ft_isdigit.c ft_isprint.c ft_itoa.c ft_lstadd.c ft_lstdel.c \
 	 ft_lstdelone.c ft_lstiter.c ft_lstmap.c ft_lstnew.c ft_max_2.c ft_max_3.c \
 	 ft_max_4.c ft_memalloc.c ft_memccpy.c ft_memchr.c ft_memcmp.c ft_memcpy.c \
 	 ft_memdel.c ft_memmove.c ft_memset.c ft_min_2.c ft_min_3.c ft_min_4.c \
