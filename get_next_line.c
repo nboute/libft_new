@@ -6,7 +6,7 @@
 /*   By: niboute <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/05 17:52:52 by niboute           #+#    #+#             */
-/*   Updated: 2019/03/07 16:36:53 by niboute          ###   ########.fr       */
+/*   Updated: 2019/03/27 18:18:36 by niboute          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,6 @@ t_file				*create_destroy_file(int act, const int fd, t_file **files)
 	{
 		if (!(new = (t_file*)malloc(sizeof(t_file))))
 			return (NULL);
-		new->fd = fd;
 		new->next = *files;
 		*(new->buff) = '\0';
 		*files = new;
@@ -133,6 +132,8 @@ int					get_next_line(const int fd, char **line)
 	found = (ptr && ptr->fd == fd) ? 1 : 0;
 	if (!found && !(ptr = create_destroy_file(1, fd, &files)))
 		return (-1);
+	if (!found)
+		files->fd = fd;
 	found = read_next_line(ptr, line, 0);
 	size = ft_strclen(ptr->buff, '\n');
 	ft_strcpy(ptr->buff, ptr->buff + size + (ptr->buff[size] == '\n' ? 1 : 0));

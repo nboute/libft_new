@@ -6,7 +6,7 @@
 /*   By: niboute <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/04 16:18:03 by niboute           #+#    #+#             */
-/*   Updated: 2019/03/22 05:42:30 by niboute          ###   ########.fr       */
+/*   Updated: 2019/03/27 17:52:22 by niboute          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,7 @@ long				ft_abs(long value);
 int					ft_atoi(const char *src);
 void				ft_bzero(void *s, size_t n);
 double				ft_dmap(double val, double range, double min2, double max2);
+char				*ft_hextoa(unsigned int hex, int maj);
 int					ft_isalnum(int c);
 int					ft_isalpha(int c);
 int					ft_isascii(int c);
@@ -107,6 +108,7 @@ char				**ft_strsplit(char const *s, char c);
 char				*ft_strstr(const char *str, const char *substr);
 char				*ft_strsub(char const *s, unsigned int start, size_t len);
 char				*ft_strtrim(char const *s);
+long				ft_sqrt(long x);
 void				ft_tabdel(void ***tab, size_t size);
 int					ft_tolower(int c);
 int					ft_toupper(int c);
