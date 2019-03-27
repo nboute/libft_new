@@ -6,31 +6,34 @@
 /*   By: niboute <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/27 17:46:15 by niboute           #+#    #+#             */
-/*   Updated: 2019/03/27 17:52:01 by niboute          ###   ########.fr       */
+/*   Updated: 2019/03/27 19:26:52 by niboute          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
+#include <stdio.h>
 
 char	*ft_hextoa(unsigned int hex, int maj)
 {
 	char	*str;
 	int		i;
 
-	if (!(str = (char*)malloc(sizeof(char) * 11)))
+	if (!(str = (char*)malloc(sizeof(char) * 12)))
 		return (NULL);
-	str[0] = 0;
+	str[0] = '0';
 	str[1] = !maj ? 'x' : 'X';
 	i = 10;
 	while (i > 1)
 	{
 		if (!maj)
-			str[i] = (hex & 16) >= 10 ?
-				(hex & 16) - 10 + 'a' : (hex & 16) + '0';
+			str[i] = (hex & 15) >= 10 ?
+				(hex & 15) - 10 + 'a' : (hex & 15) + '0';
 		else
-			str[i] = (hex & 16) >= 10 ?
-				(hex & 16) - 10 + 'A' : (hex & 16) + '0';
+			str[i] = (hex & 15) >= 10 ?
+				(hex & 15) - 10 + 'A' : (hex & 15) + '0';
 		i--;
+		hex >>= 8;
 	}
+	str[11] = '\0';
 	return (str);
 }
