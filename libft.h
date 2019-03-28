@@ -6,7 +6,7 @@
 /*   By: niboute <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/04 16:18:03 by niboute           #+#    #+#             */
-/*   Updated: 2019/03/28 15:46:25 by niboute          ###   ########.fr       */
+/*   Updated: 2019/03/28 15:55:59 by niboute          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,7 +70,7 @@ void				*ft_memset(void *b, int c, size_t len);
 int					ft_min_2(int a, int b);
 int					ft_min_3(int a, int b, int c);
 int					ft_min_4(int a, int b, int c, int d);
-int					ft_power(long nb, int pow);
+long				ft_power(long nb, int pow);
 void				ft_putchar(char c);
 void				ft_putchar_fd(char c, int fd);
 void				ft_putendl(char const *s);
