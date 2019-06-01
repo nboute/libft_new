@@ -6,7 +6,7 @@
 /*   By: niboute <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/06 16:56:35 by niboute           #+#    #+#             */
-/*   Updated: 2018/12/20 12:50:04 by niboute          ###   ########.fr       */
+/*   Updated: 2019/06/01 18:25:16 by niboute          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@ void			*ft_memcpy(void *dst, const void *src, size_t n)
 
 	psrc = (const char*)src;
 	pdst = (char*)dst;
-	if ((psrc > pdst && psrc - psrc < (long)n) ||
-			(pdst > psrc && pdst - psrc < (long)n))
+	if ((psrc > pdst && psrc - psrc < (long)n)
+			|| (pdst > psrc && pdst - psrc < (long)n))
 		ft_memmove(dst, src, n);
 	while (n)
 	{
