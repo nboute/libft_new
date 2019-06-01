@@ -6,7 +6,7 @@
 /*   By: niboute <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/04 16:18:03 by niboute           #+#    #+#             */
-/*   Updated: 2019/03/28 15:55:59 by niboute          ###   ########.fr       */
+/*   Updated: 2019/06/01 18:16:24 by niboute          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <string.h>
 
 # define BUFF_SIZE 512
+# define INPUT_SIZE 255
 
 typedef struct		s_list
 {
@@ -79,6 +80,7 @@ void				ft_putnbr(int n);
 void				ft_putnbr_fd(int n, int fd);
 void				ft_putstr(char const *s);
 void				ft_putstr_fd(char const *s, int fd);
+int					ft_read_check_input(void *data, int (*fct)(char*, void*));
 char				*ft_strcat(char *s1, const char *s2);
 char				*ft_strchr(const char *str, int c);
 size_t				ft_strclen(const char *str, char c);
