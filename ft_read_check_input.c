@@ -6,7 +6,7 @@
 /*   By: niboute <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/01 18:24:58 by niboute           #+#    #+#             */
-/*   Updated: 2019/06/01 19:20:44 by niboute          ###   ########.fr       */
+/*   Updated: 2019/06/01 21:04:53 by niboute          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,11 @@ int		ft_read_check_input(char *text, char *error, void *data,
 			return (1);
 		validinput = fct(buff, data);
 		if (!validinput)
+		{
+			ft_putstr("\x1B[31m");
 			ft_putstr(error);
+			ft_putstr("\x1B[0m");
+		}
 	}
 	return (0);
 }
