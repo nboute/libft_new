@@ -6,14 +6,15 @@
 /*   By: niboute <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/01 18:24:58 by niboute           #+#    #+#             */
-/*   Updated: 2019/06/01 18:46:36 by niboute          ###   ########.fr       */
+/*   Updated: 2019/06/01 18:57:16 by niboute          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <unistd.h>
 
-int		ft_read_check_input(char *text, void *data, int (*fct)(char*, void*))
+int		ft_read_check_input(char *text, char *error, void *data,
+		int (*fct)(char*, void*))
 {
 	int	ret;
 	char	buff[INPUT_SIZE + 1];
@@ -30,7 +31,7 @@ int		ft_read_check_input(char *text, void *data, int (*fct)(char*, void*))
 			return (1);
 		validinput = fct(buff, data);
 		if (!validinput)
-			ft_putstr("Please enter a valid input\n");
+			ft_putstr(error);
 	}
 	return (0);
 }

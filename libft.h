@@ -6,7 +6,7 @@
 /*   By: niboute <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/04 16:18:03 by niboute           #+#    #+#             */
-/*   Updated: 2019/06/01 18:46:58 by niboute          ###   ########.fr       */
+/*   Updated: 2019/06/01 18:56:42 by niboute          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,7 +80,7 @@ void				ft_putnbr(int n);
 void				ft_putnbr_fd(int n, int fd);
 void				ft_putstr(char const *s);
 void				ft_putstr_fd(char const *s, int fd);
-int					ft_read_check_input(char *text,
+int					ft_read_check_input(char *text, char *error,
 					void *data, int (*fct)(char*, void*));
 char				*ft_strcat(char *s1, const char *s2);
 char				*ft_strchr(const char *str, int c);
