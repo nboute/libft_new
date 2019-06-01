@@ -6,7 +6,7 @@
 /*   By: niboute <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/01 18:24:58 by niboute           #+#    #+#             */
-/*   Updated: 2019/06/01 18:57:16 by niboute          ###   ########.fr       */
+/*   Updated: 2019/06/01 19:20:44 by niboute          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int		ft_read_check_input(char *text, char *error, void *data,
 		ft_putstr("Type \"quit\" to cancel\n");
 		ret = read(0, buff, INPUT_SIZE);
 		buff[ret] = '\0';
-		if (!ft_strcmp(buff, "quit\n"))
+		if (!ft_strncmp(buff, "quit", 4))
 			return (1);
 		validinput = fct(buff, data);
 		if (!validinput)
