@@ -6,7 +6,7 @@
 /*   By: niboute <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/04 16:18:03 by niboute           #+#    #+#             */
-/*   Updated: 2019/06/01 18:16:24 by niboute          ###   ########.fr       */
+/*   Updated: 2019/06/01 18:46:58 by niboute          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,7 +80,8 @@ void				ft_putnbr(int n);
 void				ft_putnbr_fd(int n, int fd);
 void				ft_putstr(char const *s);
 void				ft_putstr_fd(char const *s, int fd);
-int					ft_read_check_input(void *data, int (*fct)(char*, void*));
+int					ft_read_check_input(char *text,
+					void *data, int (*fct)(char*, void*));
 char				*ft_strcat(char *s1, const char *s2);
 char				*ft_strchr(const char *str, int c);
 size_t				ft_strclen(const char *str, char c);
@@ -104,7 +105,7 @@ char				*ft_strndup(const char *str, size_t size);
 int					ft_strnequ(char const *s1, char const *s2, size_t n);
 char				*ft_strnew(size_t size);
 char				*ft_strnstr(const char *str, const char *substr,
-		size_t len);
+					size_t len);
 char				*ft_strrchr(const char *s, int c);
 char				**ft_strsplit(char const *s, char c);
 char				*ft_strstr(const char *str, const char *substr);
