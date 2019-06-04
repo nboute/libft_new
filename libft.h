@@ -6,7 +6,7 @@
 /*   By: niboute <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/04 16:18:03 by niboute           #+#    #+#             */
-/*   Updated: 2019/06/04 12:39:52 by niboute          ###   ########.fr       */
+/*   Updated: 2019/06/04 15:58:40 by niboute          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,14 @@
 
 # define BUFF_SIZE 512
 # define INPUT_SIZE 255
+# define WR_RED   "\x1B[31m"
+# define WR_GRN   "\x1B[32m"
+# define WR_YEL   "\x1B[33m"
+# define WR_BLU   "\x1B[34m"
+# define WR_MAG   "\x1B[35m"
+# define WR_CYN   "\x1B[36m"
+# define WR_WHT   "\x1B[37m"
+# define WR_RESET "\x1B[0m"
 
 typedef struct		s_list
 {
