@@ -6,7 +6,7 @@
 /*   By: niboute <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/04 11:22:45 by niboute           #+#    #+#             */
-/*   Updated: 2019/06/04 11:45:11 by niboute          ###   ########.fr       */
+/*   Updated: 2019/06/04 11:48:22 by niboute          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@
 
 char		*ft_strnrstr(const char *str, const char *substr, size_t len)
 {
-	int		i;
+	size_t	i;
 	int		j;
-	int		slen;
+	size_t	slen;
 	int		sublen;
 
 	if (!*substr)

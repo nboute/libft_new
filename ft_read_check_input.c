@@ -6,7 +6,7 @@
 /*   By: niboute <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/01 18:24:58 by niboute           #+#    #+#             */
-/*   Updated: 2019/06/04 11:15:48 by niboute          ###   ########.fr       */
+/*   Updated: 2019/06/04 11:20:47 by niboute          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int			ft_read_check_input(char *text, char *error, void *data,
 	while (!validinput)
 	{
 		ft_putstr(text);
-		ft_putstr("Type \"quit\" to leave prompt PS:program will exit if you"
+		ft_putstr("Type \"quit\" to leave prompt. PS:program will exit if you"
 		"didn't enter a valid input beforehand\n");
 		ret = read(0, buff, INPUT_SIZE);
 		buff[ret] = '\0';
