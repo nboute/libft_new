@@ -6,7 +6,7 @@
 /*   By: niboute <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/04 16:18:03 by niboute           #+#    #+#             */
-/*   Updated: 2019/06/01 18:56:42 by niboute          ###   ########.fr       */
+/*   Updated: 2019/06/04 12:39:52 by niboute          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -104,6 +104,8 @@ char				*ft_strncpy(char *dst, const char *src, size_t len);
 char				*ft_strndup(const char *str, size_t size);
 int					ft_strnequ(char const *s1, char const *s2, size_t n);
 char				*ft_strnew(size_t size);
+char				*ft_strnrstr(const char *str, const char *substr,
+					size_t len);
 char				*ft_strnstr(const char *str, const char *substr,
 					size_t len);
 char				*ft_strrchr(const char *s, int c);
