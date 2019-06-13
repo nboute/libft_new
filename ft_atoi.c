@@ -6,15 +6,15 @@
 /*   By: niboute <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/06 19:16:51 by niboute           #+#    #+#             */
-/*   Updated: 2018/12/04 18:17:19 by niboute          ###   ########.fr       */
+/*   Updated: 2019/06/13 16:32:22 by niboute          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_atoi(const char *src)
+int				ft_atoi(const char *src)
 {
-	int	i;
-	int	nb;
-	int	neg;
+	int			i;
+	int			nb;
+	int			neg;
 
 	i = 0;
 	neg = 1;

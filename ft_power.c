@@ -6,11 +6,11 @@
 /*   By: niboute <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/09 17:16:14 by niboute           #+#    #+#             */
-/*   Updated: 2019/03/28 15:46:13 by niboute          ###   ########.fr       */
+/*   Updated: 2019/06/13 16:51:39 by niboute          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-long		ft_power(long nb, int pow)
+long	ft_power(long nb, int pow)
 {
 	if (pow < 0)
 		return (0);

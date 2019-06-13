@@ -6,7 +6,7 @@
 #    By: niboute <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/09 18:34:41 by niboute           #+#    #+#              #
-#    Updated: 2019/06/04 12:40:15 by niboute          ###   ########.fr        #
+#    Updated: 2019/06/01 18:24:36 by niboute          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -74,7 +74,6 @@ SRCS= ft_abs.c \
 	  ft_strncpy.c \
 	  ft_strnequ.c \
 	  ft_strnew.c \
-	  ft_strnrstr.c \
 	  ft_strnstr.c \
 	  ft_strrchr.c \
 	  ft_strsplit.c \

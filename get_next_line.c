@@ -6,7 +6,7 @@
 /*   By: niboute <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/05 17:52:52 by niboute           #+#    #+#             */
-/*   Updated: 2019/03/27 18:18:36 by niboute          ###   ########.fr       */
+/*   Updated: 2019/06/13 16:56:45 by niboute          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-t_file				*create_destroy_file(int act, const int fd, t_file **files)
+static t_file			*create_destroy_file(int act, const int fd, t_file **files)
 {
-	t_file	*new;
-	t_file	*tmp;
+	t_file				*new;
+	t_file				*tmp;
 
 	if (act)
 	{
@@ -43,11 +43,11 @@ t_file				*create_destroy_file(int act, const int fd, t_file **files)
 	return (*files);
 }
 
-int					ft_copy_line(char **save, t_line *line, char *buff,
+static int				ft_copy_line(char **save, t_line *line, char *buff,
 		size_t size)
 {
-	t_line	*tmp;
-	size_t	clen;
+	t_line				*tmp;
+	size_t				clen;
 
 	if (!(*save = (char*)malloc(size + 1)))
 		return (0);
@@ -68,10 +68,10 @@ int					ft_copy_line(char **save, t_line *line, char *buff,
 	return (1);
 }
 
-int					ft_add_line(t_line **line, char *str)
+static int				ft_add_line(t_line **line, char *str)
 {
-	t_line			*newline;
-	t_line			*ptr;
+	t_line				*newline;
+	t_line				*ptr;
 
 	if (!(newline = (t_line*)malloc(sizeof(t_line))))
 		return (-1);
@@ -89,10 +89,10 @@ int					ft_add_line(t_line **line, char *str)
 	return (1);
 }
 
-int					read_next_line(t_file *file, char **save, size_t size)
+static int				read_next_line(t_file *file, char **save, size_t size)
 {
-	t_line			*line;
-	int				ret;
+	t_line				*line;
+	int					ret;
 
 	line = NULL;
 	*save = NULL;
@@ -117,12 +117,12 @@ int					read_next_line(t_file *file, char **save, size_t size)
 	return (1);
 }
 
-int					get_next_line(const int fd, char **line)
+int						get_next_line(const int fd, char **line)
 {
-	static t_file	*files = NULL;
-	int				found;
-	t_file			*ptr;
-	size_t			size;
+	static t_file		*files = NULL;
+	int					found;
+	t_file				*ptr;
+	size_t				size;
 
 	if (fd < 0 || !line || read(fd, NULL, 0) < 0)
 		return (-1);
