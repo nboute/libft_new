@@ -6,7 +6,7 @@
 /*   By: niboute <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/06 16:53:51 by niboute           #+#    #+#             */
-/*   Updated: 2018/12/20 12:47:13 by niboute          ###   ########.fr       */
+/*   Updated: 2019/06/17 11:18:23 by niboute          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,15 @@
 void		ft_bzero(void *s, size_t n)
 {
 	char	*ptr;
+	long	*lptr;
 
-	ptr = (char*)s;
+	lptr = (long*)s;
+	while (n >= sizeof(long))
+	{
+		*(lptr++) = 0;
+		n -= sizeof(long);
+	}
+	ptr = (char*)lptr;
 	while (n)
 	{
 		*(ptr++) = 0;

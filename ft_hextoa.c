@@ -6,12 +6,11 @@
 /*   By: niboute <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/27 17:46:15 by niboute           #+#    #+#             */
-/*   Updated: 2019/03/27 21:23:32 by niboute          ###   ########.fr       */
+/*   Updated: 2019/06/17 12:48:35 by niboute          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include <stdio.h>
 
 char	*ft_hextoa(unsigned int hex, int maj)
 {
