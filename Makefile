@@ -6,7 +6,7 @@
 #    By: niboute <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/09 18:34:41 by niboute           #+#    #+#              #
-#    Updated: 2019/06/04 12:40:15 by niboute          ###   ########.fr        #
+#    Updated: 2019/06/27 14:43:17 by niboute          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,6 +38,7 @@ SRCS= ft_abs.c \
 	  ft_memcmp.c \
 	  ft_memcpy.c \
 	  ft_memdel.c \
+	  ft_memdup.c \
 	  ft_memmove.c \
 	  ft_memset.c \
 	  ft_min_2.c \
