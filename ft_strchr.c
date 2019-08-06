@@ -6,7 +6,7 @@
 /*   By: niboute <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/06 18:35:48 by niboute           #+#    #+#             */
-/*   Updated: 2018/11/06 18:42:37 by niboute          ###   ########.fr       */
+/*   Updated: 2019/08/06 17:28:46 by niboute          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,5 +17,5 @@ char				*ft_strchr(const char *str, int c)
 	t = (char)c;
 	while (*str && *str != t)
 		str++;
-	return (*str == c ? (char*)str : 0x0);
+	return (*str == t ? (char*)str : 0x0);
 }
