@@ -6,7 +6,7 @@
 /*   By: niboute <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/04 16:18:03 by niboute           #+#    #+#             */
-/*   Updated: 2019/06/27 14:26:04 by niboute          ###   ########.fr       */
+/*   Updated: 2019/08/26 14:52:32 by niboute          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -123,6 +123,7 @@ char				*ft_strstr(const char *str, const char *substr);
 char				*ft_strsub(char const *s, unsigned int start, size_t len);
 char				*ft_strtrim(char const *s);
 long				ft_sqrt(long x);
+void				ft_swap_int_2(int *a, int *b);
 void				ft_tabdel(void ***tab, size_t size);
 int					ft_tolower(int c);
 int					ft_toupper(int c);

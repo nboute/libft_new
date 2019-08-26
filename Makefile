@@ -6,7 +6,7 @@
 #    By: niboute <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/09 18:34:41 by niboute           #+#    #+#              #
-#    Updated: 2019/06/27 14:43:17 by niboute          ###   ########.fr        #
+#    Updated: 2019/08/26 14:52:48 by niboute          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -83,6 +83,7 @@ SRCS= ft_abs.c \
 	  ft_strsub.c \
 	  ft_strtrim.c \
 	  ft_sqrt.c \
+	  ft_swap_int_2.c \
 	  ft_tabdel.c \
 	  ft_tolower.c \
 	  ft_toupper.c \
