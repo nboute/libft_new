@@ -6,7 +6,7 @@
 #    By: niboute <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/09 18:34:41 by niboute           #+#    #+#              #
-#    Updated: 2019/08/26 14:52:48 by niboute          ###   ########.fr        #
+#    Updated: 2019/10/16 17:10:25 by niboute          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -60,6 +60,7 @@ SRCS= ft_abs.c \
 	  ft_strclr.c \
 	  ft_strcmp.c \
 	  ft_strcpy.c \
+	  ft_strcpy_hextoa.c \
 	  ft_strdel.c \
 	  ft_strdup.c \
 	  ft_strequ.c \
