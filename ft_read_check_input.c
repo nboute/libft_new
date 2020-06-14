@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_read_check_input.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: niboute <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: mwragg <mwragg@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/01 18:24:58 by niboute           #+#    #+#             */
-/*   Updated: 2019/06/04 16:08:49 by niboute          ###   ########.fr       */
+/*   Updated: 2020/06/06 20:37:25 by mwragg           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int			ft_read_check_input(char *text, char *error, void *data,
 	validinput = 0;
 	while (!validinput)
 	{
-		ft_putstr(text);
+		ft_putendl(text);
 		ft_putstr(WR_MAG"Type \"quit\" to leave prompt. PS: The program will"
 		" exit if you didn't enter a valid input beforehand\n" WR_RESET);
 		ret = read(0, buff, INPUT_SIZE);

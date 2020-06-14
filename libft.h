@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: niboute <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/04 16:18:03 by niboute           #+#    #+#             */
-/*   Updated: 2019/10/16 17:10:03 by niboute          ###   ########.fr       */
+/*   Updated: 2020/06/14 23:42:58 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,9 @@ int					get_next_line(const int fd, char **line);
 long				ft_abs(long value);
 int					ft_atoi(const char *src);
 void				ft_bzero(void *s, size_t n);
+size_t				ft_count_words(char const *s, char c);
 double				ft_dmap(double val, double range, double min2, double max2);
+double				ft_dmodulo(double nb, double div);
 char				*ft_hextoa(unsigned int hex, int maj);
 int					ft_isalnum(int c);
 int					ft_isalpha(int c);
@@ -80,6 +82,7 @@ void				*ft_memset(void *b, int c, size_t len);
 int					ft_min_2(int a, int b);
 int					ft_min_3(int a, int b, int c);
 int					ft_min_4(int a, int b, int c, int d);
+int					ft_modulo(int nb, int div);
 long				ft_power(long nb, int pow);
 void				ft_putchar(char c);
 void				ft_putchar_fd(char c, int fd);
@@ -93,6 +96,7 @@ int					ft_read_check_input(char *text, char *error,
 					void *data, int (*fct)(char*, void*));
 char				*ft_strcat(char *s1, const char *s2);
 char				*ft_strchr(const char *str, int c);
+int					ft_strichr(const char *s, int c);
 size_t				ft_strclen(const char *str, char c);
 void				ft_strclr(char *str);
 int					ft_strcmp(const char *s1, const char *s2);
@@ -101,6 +105,7 @@ char				*ft_strcpy_hextoa(char *dest, unsigned int hex, int maj);
 void				ft_strdel(char **as);
 char				*ft_strdup(const char *str);
 int					ft_strequ(char const *s1, char const *s2);
+void				ft_strexit(char *str);
 void				ft_striter(char *s, void (*f)(char *));
 void				ft_striteri(char *s, void (*f)(unsigned int, char *));
 char				*ft_strjoin(char const *s1, char const *s2);

@@ -3,17 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strsplit.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: niboute <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: mwragg <mwragg@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/09 15:35:16 by niboute           #+#    #+#             */
-/*   Updated: 2018/12/20 13:41:53 by niboute          ###   ########.fr       */
+/*   Updated: 2020/06/06 13:19:43 by mwragg           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 
-static size_t	ft_count_words(char const *s, char c)
+static size_t	ft_word_count(char const *s, char c)
 {
 	size_t		i;
 	size_t		words;
@@ -43,7 +43,7 @@ char			**ft_strsplit(char const *s, char c)
 
 	if (!s)
 		return (NULL);
-	words = ft_count_words(s, c);
+	words = ft_word_count(s, c);
 	if (!(tab = (char**)malloc(sizeof(char*) * (words + 1))))
 		return (NULL);
 	i = 0;

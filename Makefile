@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: niboute <marvin@42.fr>                     +#+  +:+       +#+         #
+#    By: marvin <marvin@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/09 18:34:41 by niboute           #+#    #+#              #
-#    Updated: 2019/10/16 17:10:25 by niboute          ###   ########.fr        #
+#    Updated: 2020/06/14 23:40:51 by marvin           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,9 @@ NAME=libft.a
 SRCS= ft_abs.c \
 	  ft_atoi.c \
 	  ft_bzero.c \
+	  ft_count_words.c \
 	  ft_dmap.c \
+	  ft_dmodulo.c \
 	  ft_hextoa.c \
 	  ft_isalnum.c \
 	  ft_isalpha.c \
@@ -44,6 +46,7 @@ SRCS= ft_abs.c \
 	  ft_min_2.c \
 	  ft_min_3.c \
 	  ft_min_4.c \
+	  ft_modulo.c \
 	  ft_power.c \
 	  ft_putchar.c \
 	  ft_putchar_fd.c \
@@ -56,6 +59,7 @@ SRCS= ft_abs.c \
 	  ft_read_check_input.c \
 	  ft_strcat.c \
 	  ft_strchr.c \
+	  ft_strichr.c \
 	  ft_strclen.c \
 	  ft_strclr.c \
 	  ft_strcmp.c \
@@ -64,6 +68,7 @@ SRCS= ft_abs.c \
 	  ft_strdel.c \
 	  ft_strdup.c \
 	  ft_strequ.c \
+	  ft_strexit.c \
 	  ft_striter.c \
 	  ft_striteri.c \
 	  ft_strjoin.c \
