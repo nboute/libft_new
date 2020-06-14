@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/04 16:18:03 by niboute           #+#    #+#             */
-/*   Updated: 2020/06/15 01:17:39 by marvin           ###   ########.fr       */
+/*   Updated: 2020/06/15 01:38:14 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,6 @@ int					ft_atoi(const char *src);
 void				ft_bzero(void *s, size_t n);
 size_t				ft_count_words(char const *s, char c);
 double				ft_dmap(double val, double range, double min2, double max2);
-double				ft_dmodulo(double nb, double div);
 char				*ft_hextoa(unsigned int hex, int maj);
 int					ft_isalnum(int c);
 int					ft_isalpha(int c);
@@ -61,7 +60,6 @@ int					ft_isascii(int c);
 int					ft_isdigit(int c);
 int					ft_isprint(int c);
 char				*ft_itoa(int n);
-double				ft_floor(double n);
 void				ft_lstadd(t_list **alst, t_list *lstnew);
 void				ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 void				ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
