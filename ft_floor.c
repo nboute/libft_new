@@ -1,18 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_dmodulo.c                                       :+:      :+:    :+:   */
+/*   ft_floor.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/06/14 23:38:59 by marvin            #+#    #+#             */
-/*   Updated: 2020/06/15 01:20:24 by marvin           ###   ########.fr       */
+/*   Created: 2020/06/15 01:11:18 by marvin            #+#    #+#             */
+/*   Updated: 2020/06/15 01:22:58 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <limits.h>
 
-double	ft_dmodulo(double nb, double div)
+double	ft_floor(double n)
 {
-	return (!div ? nb : nb - (ft_floor(nb / div) * div));
+	double	d;
+
+	if (n >= LLONG_MAX || n <= LLONG_MIN || n != n)
+		return (n);
+	d = (double)((long long)n);
+	if (d == (long long)n || (long long)n >= 0)
+		return (d);
+	else
+		return (d - 1);
 }

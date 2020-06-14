@@ -6,7 +6,7 @@
 #    By: marvin <marvin@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/09 18:34:41 by niboute           #+#    #+#              #
-#    Updated: 2020/06/14 23:40:51 by marvin           ###   ########.fr        #
+#    Updated: 2020/06/15 01:17:52 by marvin           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,6 +18,7 @@ SRCS= ft_abs.c \
 	  ft_count_words.c \
 	  ft_dmap.c \
 	  ft_dmodulo.c \
+	  ft_floor.c \
 	  ft_hextoa.c \
 	  ft_isalnum.c \
 	  ft_isalpha.c \
